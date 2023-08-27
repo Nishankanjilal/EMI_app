@@ -1,3 +1,4 @@
+import streamlit as st
 st.header('EMI calculator App') 
 def emi(p,n,r):
   output=(p*(r/12)*((1+((r/12)/100))**(n*12)))/100*(((1+((r/12)/100))**(n*12))-1)
